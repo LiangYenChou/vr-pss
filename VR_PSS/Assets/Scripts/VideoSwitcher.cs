@@ -8,20 +8,41 @@ public class VideoSwitcher : MonoBehaviour
     public bool doSwitch = false;
     UnityEngine.Video.VideoPlayer _videoPlayer;
 
+    public static VideoSwitcher Instance { get => _instance; }
+    static VideoSwitcher _instance;
+
+    void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        _videoPlayer = GetComponent<UnityEngine.Video.VideoPlayer>();
+        _videoPlayer = GetComponent<UnityEngine.Video.VideoPlayer>();        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (doSwitch)
+        
+    }
+
+    public void SwitchVideo(int idx)
+    {
+        Debug.Log("Switching");
+        if (idx > 0 && idx < VideoClips.Count)
         {
-            _videoPlayer.clip = VideoClips[1];
+            _videoPlayer.isLooping = false;
+            _videoPlayer.clip = VideoClips[idx];
             _videoPlayer.Play();
-            doSwitch = false;
         }
     }
 }
