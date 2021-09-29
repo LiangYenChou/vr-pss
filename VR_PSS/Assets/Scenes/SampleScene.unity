@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.5547719, g: 0.52341723, b: 0.47110343, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1251,7 +1251,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068707522}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: aedb656bca529a149bfdcd196448b2f5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 7f5f812c7cec1ee4c8674b1f14eb0aa5, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VideoClips:
-  - {fileID: 32900000, guid: aedb656bca529a149bfdcd196448b2f5, type: 3}
+  - {fileID: 32900000, guid: 7f5f812c7cec1ee4c8674b1f14eb0aa5, type: 3}
   - {fileID: 32900000, guid: fe4ae5fd9099a5a4e8b87104adf43498, type: 3}
   - {fileID: 32900000, guid: 4bee03383181c3d4faec750ba7be90f5, type: 3}
   - {fileID: 32900000, guid: 49b715d66794abc40beaaf9f5c9e20ee, type: 3}
